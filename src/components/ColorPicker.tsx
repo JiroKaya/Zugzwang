@@ -9,7 +9,7 @@ export function ColorPicker({ onSelect }: Props) {
       style={{ backgroundColor: "#09090bcc", backdropFilter: "blur(4px)" }}
     >
       <div
-        className="flex flex-col items-center gap-6 rounded-2xl p-8"
+        className="flex flex-col gap-4 rounded-2xl p-4 md:p-6 w-[calc(100%-2rem)] md:w-120"
         style={{ backgroundColor: "#18181b", border: "1px solid #27272a" }}
       >
         <div className="flex flex-col items-center gap-1">
@@ -21,7 +21,7 @@ export function ColorPicker({ onSelect }: Props) {
           </p>
         </div>
 
-        <div className="flex gap-3">
+        <div className="flex gap-3 justify-around">
           {[
             { color: "w" as const, icon: "♚", label: "White" },
             { color: "random" as const, icon: "🎲", label: "Random" },

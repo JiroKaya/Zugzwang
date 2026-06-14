@@ -61,7 +61,7 @@ export function AnalyzeModal({ onAnalyzePgn, onClose }: Props) {
       style={{ backgroundColor: "#09090b99", backdropFilter: "blur(4px)" }}
     >
       <div
-        className="flex flex-col gap-4 rounded-2xl p-6 w-120"
+        className="flex flex-col gap-4 rounded-2xl p-4 md:p-6 w-[calc(100%-2rem)] md:w-120"
         style={{ backgroundColor: "#18181b", border: "1px solid #27272a" }}
       >
         <div className="flex items-center justify-between">
@@ -85,7 +85,7 @@ export function AnalyzeModal({ onAnalyzePgn, onClose }: Props) {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Paste your PGN from chess.com or lichess here..."
-            rows={8}
+            rows={5}
             className="text-sm rounded-lg px-3 py-2 outline-none resize-none text-white placeholder-zinc-600"
             style={{ backgroundColor: "#09090b", border: "1px solid #27272a" }}
           />
